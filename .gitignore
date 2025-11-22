@@ -11,13 +11,6 @@ build/
 .temp/
 .tmp/
 
-# dotenv (environment variables)
-.env
-.env.local
-.env.development
-.env.production
-.env.test
-
 # Logs
 logs/
 *.log
@@ -74,13 +67,6 @@ dist/
 build/
 .temp/
 .tmp/
-
-# dotenv (environment variables)
-.env
-.env.local
-.env.development
-.env.production
-.env.test
 
 # Logs
 logs/
