@@ -84,7 +84,6 @@ function Dashboard() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 flex flex-col">
       <div className="w-full flex-1 px-6 sm:px-12 lg:px-16 xl:px-20 py-8 sm:py-12 flex flex-col">
-        {/* Header */}
         <div className="flex justify-between items-start mb-8 sm:mb-12">
           <div className="flex-1 text-center">
             <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-blue-600 to-purple-600 rounded-2xl mb-4 shadow-lg">
@@ -97,8 +96,6 @@ function Dashboard() {
             </h1>
             <p className="text-gray-600 text-sm sm:text-base">Shorten, manage, and track your links</p>
           </div>
-          
-          {/* Health Check Button */}
           <button
             onClick={checkHealth}
             disabled={checkingHealth}
@@ -111,8 +108,6 @@ function Dashboard() {
             {checkingHealth ? "Checking..." : "Health"}
           </button>
         </div>
-
-        {/* Mobile Health Check Button */}
         <div className="sm:hidden mb-6">
           <button
             onClick={checkHealth}
@@ -125,8 +120,6 @@ function Dashboard() {
             {checkingHealth ? "Checking..." : "Check Server Health"}
           </button>
         </div>
-
-        {/* Create Form */}
         <div className="bg-white rounded-2xl shadow-xl p-6 sm:p-8 mb-8 border border-gray-100">
           <h2 className="text-xl sm:text-2xl font-semibold mb-6 flex items-center gap-2">
             <div className="w-2 h-8 bg-gradient-to-b from-blue-600 to-purple-600 rounded-full"></div>
@@ -169,8 +162,6 @@ function Dashboard() {
             </button>
           </div>
         </div>
-
-        {/* Links Table */}
         <div className="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden flex-1 flex flex-col">
           <div className="p-6 sm:p-8 border-b border-gray-100">
             <h2 className="text-xl sm:text-2xl font-semibold flex items-center gap-2">
