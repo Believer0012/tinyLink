@@ -26,7 +26,7 @@ function Dashboard() {
   async function checkHealth() {
     try {
       setCheckingHealth(true);
-      const res = await fetch(`${API_BASE}/healthz`);
+      const res = await fetch(`${API_BASE}/healthz/getHealthz`);
       const data = await res.json();
       setHealth(data);
       setShowHealthModal(true);
