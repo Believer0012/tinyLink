@@ -1,7 +1,7 @@
 import express from "express";
 import cors from "cors";
-import linkRoutes from "./routes/linkRoutes.js";
-import healthRoutes from "./routes/healthRoutes.js";
+import linkRoutes from "./routes/link.routes.js";
+import healthRoutes from "./routes/health.routes.js";
 
 const app = express();
 
