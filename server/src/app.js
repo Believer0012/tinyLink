@@ -1,21 +1,19 @@
 import express from "express";
 import cors from "cors";
-import dotenv from "dotenv";
-import LinkRoutes from "./routes/link.routes.js";
-import healthRoutes from "./routes/health.routes.js";
-
-dotenv.config();
+import linkRoutes from "./routes/linkRoutes.js";
+import healthRoutes from "./routes/healthRoutes.js";
 
 const app = express();
 
 app.use(cors());
 app.use(express.json());
 
-// API routes
-app.use("/api", LinkRoutes);
-app.use("/", healthRoutes);
+// 🔥 Important for Railway — ROOT ENDPOINT
+app.get("/", (req, res) => {
+  res.send("TinyLink backend is running");
+});
 
-// Redirect (must be last)
-app.use("/", LinkRoutes);
+app.use("/api", linkRoutes);
+app.use("/healthz", healthRoutes);
 
 export default app;
