@@ -8,10 +8,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// 🔥 Important for Railway — ROOT ENDPOINT
-app.get("/", (req, res) => {
-  res.send("TinyLink backend is running");
-});
+app.use("/", linkRoutes);
 
 app.use("/api", linkRoutes);
 app.use("/healthz", healthRoutes);
