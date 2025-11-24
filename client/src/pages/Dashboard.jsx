@@ -82,7 +82,7 @@ function Dashboard() {
   }
 
    return (
-    <div className="min-h-screen bg-stone-50 flex flex-col">
+    <div className="min-h-screen bg-stone-50 flex flex-col items-center">
       <div className="w-full flex-1 px-6 sm:px-12 lg:px-16 xl:px-20 py-8 sm:py-12 flex flex-col">
         <div className="flex justify-between items-start mb-8 sm:mb-12">
           <div className="flex-1 text-center">
